@@ -12,12 +12,11 @@ class MoviesModel(Base):
     imdb_score = Column(Float(16, 1), server_default='0.0') 
     genre = Column(String(200), server_default='')
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
-    # __table_args__ = (UniqueConstraint('name', 'director', name='movie_director_uc'),)
 
 
 class UserModel(Base):
 
-    __tablename__ = 'user'
+    __tablename__ = 'users'
 
     user_id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     name = Column(String(100), nullable=False)
