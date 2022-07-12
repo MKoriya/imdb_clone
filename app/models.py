@@ -12,7 +12,7 @@ class MoviesModel(Base):
     imdb_score = Column(Float(16, 1), server_default='0.0') 
     genre = Column(String(200), server_default='')
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
-    __table_args__ = (UniqueConstraint('name', 'director', name='movie_director_uc'),)
+    # __table_args__ = (UniqueConstraint('name', 'director', name='movie_director_uc'),)
 
 
 class UserModel(Base):
