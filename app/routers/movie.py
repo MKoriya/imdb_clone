@@ -1,7 +1,7 @@
 from typing import Optional, List
 from fastapi import HTTPException, status, Depends, APIRouter, Response
-import models, schemas, oauth2
-from database import get_db
+from .. import models, schemas, oauth2
+from ..database import get_db
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 

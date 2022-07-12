@@ -1,5 +1,5 @@
-import schemas, models, utils, oauth2
-from database import get_db
+from .. import schemas, models, utils, oauth2
+from ..database import get_db
 from fastapi import HTTPException, Depends, status, Response, APIRouter
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError

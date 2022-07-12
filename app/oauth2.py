@@ -2,10 +2,10 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from fastapi import HTTPException, status, Depends
 from fastapi.security.oauth2 import OAuth2PasswordBearer
-import schemas, models
+from . import schemas, models
 from sqlalchemy.orm import Session
-from database import get_db
-from config import settings
+from .database import get_db
+from .config import settings
 
 
 SECRET_KEY = settings.JWT_SECRET_KEY

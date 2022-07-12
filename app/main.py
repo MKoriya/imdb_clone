@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-import models
-from database import engine
-from routers import movie, user, auth, watchlist
+from . import models
+from .database import engine
+from .routers import movie, user, auth, watchlist
 from fastapi.middleware.cors import CORSMiddleware
 
 # FastAPI application
