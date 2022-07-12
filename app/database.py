@@ -4,8 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from .config import settings
 
 
-# DATABASE_URL = "mysql+pymysql://meet:root@localhost/imdb"
-DATABASE_URL = f"mysql+pymysql://{settings.DATABASE_USER}:{settings.DATABASE_PASSWORD}@{settings.DATABASE_HOST}/{settings.DATABASE_DB}"
+DATABASE_URL = settings.DATABASE_URL
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
