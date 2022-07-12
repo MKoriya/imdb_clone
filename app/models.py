@@ -1,5 +1,5 @@
 from .database import Base
-from sqlalchemy import TIMESTAMP, Column, ForeignKey, Integer, String, Float, UniqueConstraint, text, Boolean
+from sqlalchemy import TIMESTAMP, Column, ForeignKey, Integer, String, Float, text, Boolean
 
 class MoviesModel(Base):
 
