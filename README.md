@@ -30,9 +30,9 @@ JWT_EXPIRATION_TIME='expiration time in days'
 
 
 ### Access Level
-1. Admin access: can create, edit and delete users, admin users and movies
-2. User access: can create, update and retrieve watchlist, create, edit and delete their own user 
-3. Public[No Auth required] access: can search movies
+ - **Admin access:**   can create, edit and delete users, admin users and movies
+ - **User access:** can create, update and retrieve watchlist, create, edit and delete their own user 
+ - **Public access:**  can search movies
 
 ### API Docs
 You can access interactive API documentation auto built by FastAPI using Swagger UI [here](https://imdbrestbackend.herokuapp.com/docs)
@@ -47,7 +47,7 @@ password: "root"
 ```
 
 ### Note
-Due to limitation of Heroku we won't be able to run test cases on server as it only allows one database per application. so to run test cases you can clone repository and run command `pytest` from root directory. 
+Due to limitation of Heroku we won't be able to run test cases on server as it wont allows us to create another temporary testing database. so to run test cases you can clone repository and run command `pytest` from root directory. 
 
 
 ##
